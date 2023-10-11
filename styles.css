@@ -1,0 +1,287 @@
+@font-face {
+  font-family: 'roboto';
+  src: url(./assets/fonts/Roboto/Roboto-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'roboto';
+  list-style-type: none;
+}
+
+:root {
+  --rtc-primary-color: #ffffff;
+  --rtc-secondary-color: #65aef2;
+  --rtc-tertiary-color: rgb(233, 243, 246);
+}
+
+header {
+  background: url(./assets/foto\ hotel\ recortada.jpg) no-repeat;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul {
+  background-color: #ffffff;
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 1;
+  border-radius: 10px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+.home a {
+  color: var(--rtc-secondary-color);
+}
+
+header h1 {
+  color: var(--rtc-primary-color);
+  font-size: 50px;
+  text-shadow: black 2px 5px;
+}
+
+#hero {
+  margin: 80px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--rtc-tertiary-color);
+  border-radius: 15px;
+  gap: 20px;
+}
+
+.introduction h3 {
+  padding: 10px 40px;
+  font-size: 25px;
+}
+
+.introduction p {
+  color: rgb(87, 85, 85);
+}
+
+.formularies {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.formularies button {
+  margin-top: 22px;
+  background-color: var(--rtc-secondary-color);
+  height: 40px;
+  width: 120px;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--rtc-primary-color);
+  border: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.photos {
+  margin: 20px 20px;
+  padding: 60px;
+  background-color: var(--rtc-tertiary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.others {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.first_photo img {
+  border-radius: 20px;
+}
+.others img {
+  width: 230px;
+  height: 213px;
+  border-radius: 20px;
+}
+
+.offers {
+  margin: 20px 20px;
+  padding: 60px;
+}
+
+.offers span {
+  color: var(--rtc-secondary-color);
+  font-weight: 700;
+  padding: 20px;
+}
+
+.titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titles h3 {
+  font-size: 30px;
+  padding-left: 20px;
+}
+
+.titles a {
+  text-decoration: none;
+  color: var(--rtc-secondary-color);
+  font-weight: 700;
+}
+
+.offers p {
+  padding: 20px 20px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.options {
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.options img {
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px 18px rgba(0, 0, 94, 0.13);
+}
+
+footer {
+  padding: 40px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.all {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-part {
+  padding: 40px;
+  font-size: 30px;
+}
+
+.left-part h4 {
+  padding-bottom: 30px;
+}
+
+.left-part input {
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.left-part button {
+  height: 50px;
+  width: 110px;
+  border-radius: 10px;
+  background-color: var(--rtc-secondary-color);
+  color: var(--rtc-primary-color);
+  font-size: 18px;
+}
+
+.right-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.uls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.right-part ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.mobile {
+  display: none;
+}
+
+footer p {
+  padding-top: 50px;
+  padding-left: 40%;
+}
+
+@media (max-width: 925px) {
+  nav {
+    display: none;
+  }
+  .uls {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 680px) {
+  .formularies {
+    flex-direction: column;
+  }
+  .first_photo img {
+    width: 180px;
+  }
+
+  .others img {
+    width: 180px;
+    height: 163px;
+  }
+  .right-part {
+    display: none;
+  }
+  .left-part {
+    padding: 20px 50px;
+  }
+
+  .titles a {
+    display: none;
+  }
+  .mobile {
+    padding-left: 60px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+  }
+  footer p {
+    padding: 20px;
+  }
+}
